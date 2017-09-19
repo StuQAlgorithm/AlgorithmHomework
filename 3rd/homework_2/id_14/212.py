@@ -15,7 +15,7 @@ Given words = ["oath","pea","eat","rain"] and board =
   ['i','h','k','r'],
   ['i','f','l','v']
 ]
-Return ["eat","oath"].
+Return ["eat","oath"]
 Note:
 You may assume that all inputs are consist of lowercase letters a-z.
 """
