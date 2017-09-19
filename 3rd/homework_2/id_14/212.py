@@ -23,6 +23,8 @@ You may assume that all inputs are consist of lowercase letters a-z.
 # 太慢, 被拒了
 class Solution(object):
     def isExists(self, board, word, y, x, location):
+        if len(word) > len(board) * len(board[0]):
+            return False
         if location == len(word):
             return True
         if y < 0 or x < 0 or y == len(board) or x == len(board[y]):
@@ -57,15 +59,16 @@ class Solution(object):
             wordDict[word] = 0
 
             for y in range(len(board)):
+                if wordDict[word] > 0:
+                    continue
                 for x in range(len(board[0])):
+                    if wordDict[word] > 0:
+                        continue
                     if self.isExists(board, word, y, x, 0):
-                        if wordDict[word] > 0:
-                            continue
-                        else:
-                            wordDict[word] += 1
-                            results.append(word)
-                            if len(results) == len(words):
-                                return results
+                        wordDict[word] += 1
+                        results.append(word)
+                        if len(results) == len(words):
+                            return results
         return results
 
 
