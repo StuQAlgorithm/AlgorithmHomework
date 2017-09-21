@@ -9,7 +9,7 @@
  *     }
  * }
  */
-public class Solution {
+public class LinkedListCycleII_49 {
     public ListNode detectCycle(ListNode head) {
         if (head == null) {
             return null;

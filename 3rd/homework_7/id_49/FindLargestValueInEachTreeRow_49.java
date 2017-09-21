@@ -7,7 +7,7 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
-class Solution {
+class FindLargestValueInEachTreeRow_49 {
     public List<Integer> largestValues(TreeNode root) {
         List<Integer> ret = new ArrayList<Integer>();
         dfs(ret, root, 0);

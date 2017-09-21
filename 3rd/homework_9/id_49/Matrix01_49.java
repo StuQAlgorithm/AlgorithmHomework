@@ -1,4 +1,4 @@
-class Solution {
+class Matrix01_49 {
     public int[][] updateMatrix(int[][] matrix) {
         int m = matrix.length;
         int n = matrix[0].length;

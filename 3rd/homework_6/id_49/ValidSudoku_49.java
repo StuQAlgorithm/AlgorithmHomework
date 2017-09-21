@@ -1,4 +1,4 @@
-class Solution {
+class ValidSudoku_49 {
     public boolean isValidSudoku(char[][] board) {
         Set<String> set = new HashSet<String>(120);
         for (int i = 0; i < 9; i++) {

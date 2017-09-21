@@ -1,4 +1,4 @@
-class Solution {
+class GenerateParentheses_49 {
     public List<String> generateParenthesis(int n) {
         List<String> ret = new ArrayList<String>();
         generate("", ret, n, n);

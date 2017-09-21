@@ -1,4 +1,4 @@
-class Solution {
+class NQueens_49 {
     public List<List<String>> solveNQueens(int n) {
         List<List<String>> ret = new ArrayList<List<String>>();
         char[][] board = new char[n][n];
